@@ -11,15 +11,15 @@ class Documento
         self.borrado = true
     end
 
-    def puede_ser_visto_por?(usuario )
-        usuario.puede_ver? self
+    def puede_ser_visto_por?(usuario)
+        usuario.puede_ver?(self)
     end
 
-    def puede_ser_modificado_por?(usuario )
-        usuario.puede_modificar? self
+    def puede_ser_modificado_por?(usuario)
+        usuario.puede_modificar?(self)
     end
 
     def puede_ser_borrado_por?(usuario)
-        usuario.puede_borrar? self
+        usuario.puede_borrar?(self)
     end
 end

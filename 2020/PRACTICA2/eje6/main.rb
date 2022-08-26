@@ -1,8 +1,8 @@
-require_relative 'documento'
-require_relative 'usuario'
+require_relative 'lib/documento'
+require_relative 'lib/usuario'
 
 
 admin = Usuario.new("pipo","3212","Administrador")
 docdeadmin = Documento.new(admin,"Hola este contenido es re pero loco")
 
-docdeadmin.puede_ser_borrado_por?(admin)
+p docdeadmin.puede_ser_visto_por?(admin)
