@@ -3,6 +3,6 @@ require_relative 'usuario'
 
 
 admin = Usuario.new("pipo","3212","Administrador")
-docdeadmin = Documento.new(admin,"Hola este contenido es re loco")
+docdeadmin = Documento.new(admin,"Hola este contenido es re pero loco")
 
 docdeadmin.puede_ser_borrado_por?(admin)
