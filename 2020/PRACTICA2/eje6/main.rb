@@ -29,3 +29,7 @@ p "el redactor puede medificar documento de pepe? #{docDePepe.puede_ser_modifica
 p "el redactor puede medificar su documento? #{docDelRedactor.puede_ser_modificado_por?(userRedactor)}"
 p "un redactor puede medificar documento de otro redactor? #{docDelRedactor.puede_ser_modificado_por?(otroRedactor)}"
 
+p userPepe.to_s
+p userAdmin.to_s
+p userDirector.to_s
+p userRedactor.to_s

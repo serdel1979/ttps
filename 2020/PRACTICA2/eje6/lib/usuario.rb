@@ -19,4 +19,8 @@ class Usuario
         self.rol.puede_borrar?(documento)
     end
 
+    def to_s
+      p "Usuario: #{self.user} mail: #{self.mail} rol: #{self.rol.class}"
+    end
+
 end
