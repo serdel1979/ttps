@@ -1,12 +1,19 @@
-module UseFullFeatures
-    def class_name
-        self.class.to_s
+module Reverso
+ 
+    def di_tcejbo
+        self.object_id.to_s.reverse
+    end
+
+    def ssalc
+        self.class.to_s.reverse
     end
 end
 
-class Person
-include UseFullFeatures
+class Persona
+    include Reverso
 
 end
 
-puts x = Person.new.class_name
+pers = Persona.new
+puts pers.ssalc
+puts pers.di_tcejbo
