@@ -8,7 +8,7 @@ module Contable
         @cont[sym].has_key?(sym)
     end
 
-    def invoked (sym)
+    def invoked (sym) 
         @cont[sym]
     end
 end
@@ -25,7 +25,7 @@ class Greeter
     end
 
     def bye
-        puts 'See you!'
+        puts 'See you yea!'
     end
 end
 
