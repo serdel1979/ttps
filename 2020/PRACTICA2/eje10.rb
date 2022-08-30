@@ -2,11 +2,13 @@ module Contable
     @sym = nil
 
 
-    def count_invocations_of sym
-
+    def count_invocations_of (sym)
     end
 
-    def invoked?
+    def invoked? (sym)
+    end
+
+    def invoked (sym)
     end
 end
 
@@ -21,7 +23,7 @@ class Greeter
         puts 'See you!'
     end
  
-    self.count_invocations_of :hi
+    self.count_invocations_of (:hi)
 end
 
 
