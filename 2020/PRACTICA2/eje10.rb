@@ -16,9 +16,10 @@ end
 class Greeter
     include Contable
 
-    def initialize (sym)
-        count_invocations_of (sym)
+    def initialize(sys)
+        count_invocations_of sys
     end
+
 
     def hi
         puts 'Hey!'
@@ -27,10 +28,13 @@ class Greeter
     def bye
         puts 'See you yea!'
     end
+
 end
 
 
 a = Greeter.new(:hi)
 puts a.hi
+puts a.hi
+puts a.hi
 
-p a.invoked (:hi)
+puts a.invoked (:hi)
