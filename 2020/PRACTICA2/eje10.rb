@@ -1,19 +1,24 @@
 module Contable
-    @sym = nil
-
-
-    def count_invocations_of (sym)
+    attr  :cont
+    def count_invocations_of(sym)
+        @cont = {sym => 0}
     end
 
     def invoked? (sym)
+        @cont[sym].has_key?(sym)
     end
 
     def invoked (sym)
+        @cont[sym]
     end
 end
 
 class Greeter
     include Contable
+
+    def initialize (sym)
+        count_invocations_of (sym)
+    end
 
     def hi
         puts 'Hey!'
@@ -22,13 +27,10 @@ class Greeter
     def bye
         puts 'See you!'
     end
- 
-    self.count_invocations_of (:hi)
 end
 
 
-a = Greeter.new
+a = Greeter.new(:hi)
 puts a.hi
 
-b = Greeter.new
-puts b.bye
+p a.invoked (:hi)
