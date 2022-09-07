@@ -8,5 +8,5 @@ def rot13_con_cantidad(cadena,cantidad)
   (nueva_cadena.map {|c|(c.ord + cantidad).chr if c.match?(/[a-zA-Z0-9&_\.-]/)}).join('')
 end
 
-puts rot("hola",3)
-puts rot13_con_cantidad("hola",3)
+puts rot("abcd",3)
+puts rot13_con_cantidad("abcd",3)
